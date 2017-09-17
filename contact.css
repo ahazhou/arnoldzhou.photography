@@ -1,0 +1,31 @@
+#contact-section{
+  	position: absolute;
+  	top: 0; left: 0; right: 0;
+	display: flex;
+	height: 70%;
+}
+
+#contact-container{
+	padding-top: 71px;
+	align-self: center;
+	margin: auto;
+}
+
+#contact-container h2{
+	font-size: 400%;
+	text-align: center;
+	font-family: OratorStd;
+}
+
+#contact-container p{
+	font-family: Palanquin ExtraLight;
+	font-size:200%;
+	text-align: center;
+	position:relative;
+	margin: 10% auto;
+}
+
+#contact-container p:nth-child(even){
+	font-family:OratorStd;
+	font-size: 300%;
+}

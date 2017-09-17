@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+		<title>Arnold Zhou - Visual Storyteller</title>
+		<meta charset="utf-8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		<!--Scripts-->
+		<!--Needed for jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--created-->
+		<link rel="stylesheet" href="index.css">
+		<script src="assets/js/index.js"></script>
+		<script src="assets/js/general.js"></script>
+	</head>
+
+	<body class="body-class">
+		<div id="loading-screen">
+			<h1 id="loading-words">Loading...</h1>
+		</div>
+		<div id="index-content">
+			<section id="intro">
+				<div class="intro-back">
+					<div class="imageGrayscale">
+						<div id="home-rotation-image-1" class="intro-class"></div>
+						<div id="home-rotation-image-2" class="intro-class"></div>
+						<a href="#work"><img src="assets/OtherPhotos/Arnold Zhou.png" id="intro-name" class="undragable"></img></a>
+						<a href="#work"><img src="assets/OtherPhotos/arrow.png" id="intro-arrow" class="undragable"></img></a>
+					</div>
+				</div>
+			</section>
+
+			<section class="floatbar">
+				<div id="index_floatable" class="floatable">
+					<a href="#intro"><img src="assets/OtherPhotos/Arnold Zhou bw.png" class="float-logo undragable"></img></a>
+					<button class="menu-collapsed-button" onclick="open_navbar_collapsed()">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</button>
+					<div class="navbar-collapsed-menu-drop">
+						<a href="#about"><h1 class="floatbar-text">About</h1></a>
+						<a href="#work"><h1 class="floatbar-text">Work</h1></a>	
+						<a href="contact.html"><h1 class="floatbar-text">Contact</h1></a>
+					</div>
+					<div class="menu-full-choices">
+						<div class="floatbar-options goto-contact">
+							<a href="contact.html"><h1 class="floatbar-text">Contact</h1></a>
+						</div>
+						<div class="floatbar-options">
+							<a class="goto-work" href="#work"><h1 class="floatbar-text">Work</h1></a>
+						</div>
+						<div class="floatbar-options">
+							<a class="goto-about" href="#about"><h1 class="floatbar-text">About</h1></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--HAVE TO LOOK INTO USING SPRITES INSTEAD OF SEPARATE IMAGES-->
+			<!--https://css-tricks.com/css-sprites/-->
+			<section id="work">
+				<div class="pic-choice imageGrayscale">
+					<div class="portraits-image imageGrayscale" onClick="document.location.href='portraits.html';">
+						<h2>
+							Portraits
+						</h2>
+					</div>
+					<div class="events-image imageGrayscale" onClick="document.location.href='events.html';">
+						<h2>
+							Events
+						</h2>
+					</div>
+					<div class="street-image imageGrayscale" onClick="document.location.href='street.html';">
+						<h2>
+							Street
+						</h2>
+					</div>
+					<div class="proposals-image imageGrayscale" onClick="document.location.href='proposal_and_graduation.html';">
+						<h2>
+							Proposal and Graduation
+						</h2>
+					</div>
+				</div>
+			</section>
+
+			<section id="about">
+				<div class="about-page">
+					<img src="assets/OtherPhotos/Personal.jpg" class="about-pic undragable"></img>
+					<div class="about-text">
+						<h2>Arnold Zhou</h2>
+						<p>Arnold is a freelance photographer based in Michigan who primarily does portrait and event photography. He currently works for the Michigan Daily, the University of Michigan's school newspaper, shooting sports, talks, and other events like TEDxUofM.</p>
+
+						<p>Arnold's photography centers around story-telling, framing images to express an idea.
+						When working with clients, Arnold understands the importance of listening to their needs to create a product that aligns with their vision.</p>
+					</div>
+			</section>
+		</div>
+	</body>
+</html>
