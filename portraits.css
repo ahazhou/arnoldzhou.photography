@@ -171,7 +171,7 @@
 	min-height: 100px;
 	background: transparent;
 	font-size: 10vw;
-	border: 0;
+	border: 1px solid #7dacb6;
 	color: white;
 	position: absolute;
 	opacity: 0.5;

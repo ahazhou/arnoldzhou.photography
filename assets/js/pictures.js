@@ -72,10 +72,10 @@ function temp_insert_image(preloadLarge){
 	var numberOfImages = 15;
 	var numberLoaded = 0;
 	if(currpage() === "Events"){
-		numberOfImages = 63;
+		numberOfImages = 21;
 	}
 	else if (currpage() === "Portraits"){
-		numberOfImages = 19;
+		numberOfImages = 18;
 	}
 	else if (currpage() === "Proposal and Graduation"){
 		numberOfImages = 36;
