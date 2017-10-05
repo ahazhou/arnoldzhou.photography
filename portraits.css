@@ -96,8 +96,8 @@
 
 .photo:hover{
 	transform: scale(1.03, 1.03);
-	-webkit-filter: brightness(1.1);
-    filter: brightness(1.1);
+	-webkit-filter: brightness(1.1) saturate(120%);
+    filter: brightness(1.1) saturate(120%);
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 }
@@ -116,7 +116,9 @@
 	-webkit-transition: opacity 0.3s;
     -moz-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-filter: saturate(120%);
+	filter: saturate(120%);
 }
 
 @media (max-width: 1547px){

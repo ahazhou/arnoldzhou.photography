@@ -83,7 +83,11 @@ def main():
 	#True to compress and false to not compress
 	doCompress = False
 	#paths for actual paths, changePaths for toAddChange
-	mainfunc(paths, rename, doCompress)
+	path = paths
+	
+	#just want to rename everything before changing name to something new
+	mainfunc(path, "prename"+rename, False)
+	mainfunc(path, rename, doCompress)
 
 if __name__ == "__main__":
     main()
