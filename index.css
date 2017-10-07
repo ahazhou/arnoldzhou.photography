@@ -233,6 +233,7 @@
 	vertical-align: middle; 
 	line-height: 100%;
 	color: gray;
+	cursor: pointer;
 }
 
 .floatbar-text:hover{
@@ -252,6 +253,64 @@
 .floatbar-options a{
 	text-decoration: none;
 	color: black
+}
+
+.collapse-floatbar-drop > a{
+	color: gray !important;
+}
+
+.collapse-floatbar-drop:hover > a{
+	color: #cecece !important;
+}
+
+.collapse-floatbar-drop > .floatbar-dropdown h3{
+	height: 50px;
+	line-height: 50px;
+}
+
+.collapse-floatbar-drop:hover .floatbar-dropdown{
+	visibility: visible;
+	z-index: 0;
+	opacity: 1;
+	top: 100px;
+	width:200px;
+	left:0;
+	transition-delay: 0s, 0s, 0.3s;
+}
+
+.floatbar-drop:hover .floatbar-dropdown{
+	visibility: visible;
+	z-index: 0;
+	opacity: 1;
+	top: 50px;
+	transition-delay: 0s, 0s, 0.3s;
+}
+
+.floatbar-dropdown{
+	visibility: hidden;
+	z-index: -1;
+	opacity: 0;
+	position: absolute;
+	width: 128px;
+	left: -35px;
+	text-align: center;
+	top: 25px;/*junk value*/
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s;
+}
+
+.floatbar-dropdown h3{
+	background: #687D85;
+	color: white;
+	margin: 0;
+	border: 1px solid #687D85;
+	font-size: 20px;
+}
+
+.floatbar-dropdown h3:hover{
+	background: white;
+	cursor: pointer;
+	color: #686868;
+
 }
 
 .menu-collapsed-button{
