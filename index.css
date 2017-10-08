@@ -182,10 +182,10 @@
 	-moz-transition-property: -moz-filter;
 	-o-transition-property: -o-filter;
 	transition-property: filter;
-	-webkit-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-o-transition-duration: 1s;
-	transition-duration: 1s;
+	-webkit-transition-duration: 0.7s;
+	-moz-transition-duration: 0.7s;
+	-o-transition-duration: 0.7s;
+	transition-duration: 0.7s;
 }
 
 .imageGrayscale:hover{

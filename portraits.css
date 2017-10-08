@@ -74,7 +74,7 @@
 	transform: translate(-50%,0);
 	max-height: 150%;
 	max-width: 150%;
-	top:0;bottom:0;right:0;left: 50%;
+	top:0;right:0;left: 50%;
 	margin: auto;
 	cursor: pointer;
 	-webkit-filter: brightness(1);
@@ -86,7 +86,6 @@
 .square-photo-container:hover .photo{
 	max-height: 100%;
 	max-width: 100%;
-	top:0;bottom:0;
 	-webkit-filter: brightness(1.1) saturate(120%);
     filter: brightness(1.1) saturate(120%);
 	-webkit-transition-duration: 0.3s;
