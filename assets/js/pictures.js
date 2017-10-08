@@ -91,6 +91,9 @@ function temp_insert_image(preloadLarge){
 	//add images to page
 	for(var i = 0; i < numberOfImages; ++i){
 		var img = document.createElement("IMG");
+		var div = document.createElement("DIV");
+		div.className += "square-photo-container"
+		div.appendChild(img);
 		img.src = adjustedPage + '/' + i + '.jpg';
 		img.className += "photo";
 		img.alt = i;
@@ -110,7 +113,7 @@ function temp_insert_image(preloadLarge){
 			largeElement.appendChild(imgLarge);
 		})
 		//post to page
-		currElement.appendChild(img);
+		currElement.appendChild(div);
 		img.onload = function(){
 			numberLoaded += 1;
 			if(numberLoaded === numberOfImages){

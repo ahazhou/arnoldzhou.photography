@@ -1,9 +1,7 @@
 .photo-container{
-	margin: 10px 0 50px 0;
+	margin: 10px auto 50px auto;
 	padding-bottom: 50px;
-	max-width: 1920px;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 1080px;
 	text-align: center;
 
 	-webkit-animation: loadMove 2s ease-out	; /* Safari, Chrome and Opera > 12.1 */
@@ -15,78 +13,69 @@
 
 @keyframes loadMove {
     from { 
-    	margin: 200% 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 200% auto 50px auto;
     }
     to   { 
-    	margin: 10px 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 10px auto 50px auto;
     }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes loadMove {
     from { 
-    	margin: 200% 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 200% auto 50px auto;
     }
     to   { 
-    	margin: 10px 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 10px auto 50px auto;
     }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes loadMove {
     from { 
-    	margin: 200% 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 200% auto 50px auto;
     }
     to   { 
-    	margin: 10px 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 10px auto 50px auto;
     }
 }
 
 /* Internet Explorer */
 @-ms-keyframes loadMove {
     from { 
-    	margin: 200% 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 200% auto 50px auto;
     }
     to   { 
-    	margin: 10px 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 10px auto 50px auto;
     }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes loadMove {
     from { 
-    	margin: 200% 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 200% auto 50px auto;
     }
     to   { 
-    	margin: 10px 0 50px 0;
-    	margin-left: auto;
-		margin-right: auto;
+    	margin: 10px auto 50px auto;
     }
 }
 
+.square-photo-container{
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin: 30px;
+}
+
 .photo{
-	height: 500px;
-	vertical-align: middle;
-	margin: 0.5%;
-	min-width: 300px;
+	position: absolute;
+	transform: translate(-50%,0);
+	max-height: 150%;
+	max-width: 150%;
+	top:0;bottom:0;right:0;left: 50%;
+	margin: auto;
 	cursor: pointer;
 	-webkit-filter: brightness(0.8);
     filter: brightness(0.8);
@@ -94,8 +83,10 @@
 	transition-duration: 1s;
 }
 
-.photo:hover{
-	transform: scale(1.03, 1.03);
+.square-photo-container:hover .photo{
+	max-height: 100%;
+	max-width: 100%;
+	top:0;bottom:0;
 	-webkit-filter: brightness(1.1) saturate(120%);
     filter: brightness(1.1) saturate(120%);
 	-webkit-transition-duration: 0.3s;
@@ -121,9 +112,17 @@
 	filter: saturate(120%);
 }
 
-@media (max-width: 1547px){
+@media (max-width: 800px){
+	.square-photo-container{
+		width: auto;
+		height: auto;
+		overflow: auto;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
 	.photo{
-		width: 90%;
+		position: relative;
+		width: 100%;
 		height: auto;
 		margin-top: 0px;
 		margin-bottom: 1%;
@@ -132,6 +131,12 @@
 	}
 	.photo-container{
 		max-width: 900px;
+	}
+	.square-photo-container:hover .photo{
+		max-height: auto;
+		max-width: auto;
+		filter: none;
+		-webkit-filter: none;
 	}
 }
 
@@ -149,12 +154,14 @@
 }
 
 .close-button{
+	cursor: pointer;
 	position: fixed;
 	font-size: 500%;
-	top: 0;
+	top: -1.2vh;
 	right: 0;
 	width: 5%;
-	min-width: 50px;
+	min-width: 100px;
+	min-height: 100px;
 	height: 7%;
 	background: transparent;
 	border: 0;
@@ -169,20 +176,34 @@
 }
 
 .move-button{
+	cursor: pointer;
 	width: 10%;
+	height: 10vw;
 	min-height: 100px;
 	background: transparent;
 	font-size: 10vw;
-	border: 1px solid #7dacb6;
 	color: white;
 	position: absolute;
 	opacity: 0.5;
 	top: 50%;
 	transform: translateY(-40%);
+	border: none;
+}
+
+.move-button:focus {/*remove highlighting when clicking*/
+    outline-width: 0;
 }
 
 .move-button span{
-	position: relative;
+	position: absolute;
+	top: -1.7vw;
+	left: 3vw;
+}
+
+@media(max-width: 1010px){/*width size for the arrow to be sized correctly*/
+	.move-button span{
+		font-size: 100px;
+	}
 }
 
 .move-button:hover{
