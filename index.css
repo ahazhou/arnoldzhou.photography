@@ -469,3 +469,24 @@
 #index-content{
 	display: none;
 }
+
+.copyright{
+	width: 100%;
+	height:70px;
+	position: relative;
+	background: #687D85;
+	color: white;
+	text-align: center;
+}
+
+.copyright img{
+	height: 30px;
+	width: auto;
+	margin:10px 10px 0 0;
+}
+
+.copyright h3{
+	margin: 0;
+	width: 100%;
+	font-size: 15px;
+}

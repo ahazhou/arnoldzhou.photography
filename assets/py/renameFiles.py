@@ -6,7 +6,7 @@ pathOrigin="C:/Users/arnol/Desktop/arnoldzhouphotographwebsite"
 paths = ["/Portraits",
 		"/Events",
 		"/Street",
-		"/ProposalandGraduation"]
+		"/Graduation"]
 
 changePaths = ["/toaddChange"]
 
@@ -79,11 +79,11 @@ def mainfunc(currPaths, rename, doCompress):
 				print(val + '\n')
 
 def main():
-	rename = ""
+	rename = "asdf"
 	#True to compress and false to not compress
 	doCompress = False
 	#paths for actual paths, changePaths for toAddChange
-	path = paths
+	path = changePaths
 	
 	#just want to rename everything before changing name to something new
 	mainfunc(path, "prename"+rename, False)

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arnold Zhou | Graduation</title>
+		<link rel="icon" href="favicon.ico">
+		<meta charset="utf-8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		<!--Scripts-->
+		<!--Needed for jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--created-->
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="portraits.css">
+		<script src="assets/js/pictures.js"></script>
+		<script src="assets/js/general.js"></script>
+	</head>
+	<body class="body-class">
+		<section class="floatbar">
+			<div class="floatable">
+				<a href="index.html#intro"><img src="assets/OtherPhotos/Arnold Zhou bw.png" class="float-logo undragable"></img></a>
+				<button class="menu-collapsed-button" onclick="open_navbar_collapsed()">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</button>
+				<div class="navbar-collapsed-menu-drop">
+					<a href="index.html#about"><h1 class="floatbar-text">About</h1></a>
+					<a>
+						<h1 class="floatbar-text collapse-floatbar-drop">Work
+							<div class="floatbar-dropdown">
+								<div><a href="portraits.html"><h3>Portraits</h3></a></div>
+								<div><a href="events.html"><h3>Events</h3></a></div>
+								<div><a href="street.html"><h3>Street</h3></a></div>
+								<div><a href="graduation.html"><h3>Graduation</h3></a></div>
+							</div>
+						</h1>
+					</a>
+					<a href="contact.html"><h1 class="floatbar-text">Contact</h1></a>
+				</div>
+				<div class="menu-full-choices">
+					<div class="floatbar-options goto-contact">
+						<a href="contact.html"><h1 class="floatbar-text">Contact</h1></a>
+					</div>
+					<div class="floatbar-options floatbar-drop">
+						<a class="goto-work" href="index.html#work"><h1 class="floatbar-text">Work ▼</h1></a>
+						<div class="floatbar-dropdown">
+							<div><a href="portraits.html"><h3>Portraits</h3></a></div>
+							<div><a href="events.html"><h3>Events</h3></a></div>
+							<div><a href="street.html"><h3>Street</h3></a></div>
+							<div><a href="graduation.html"><h3>Graduation</h3></a></div>
+						</div>
+					</div>
+					<div class="floatbar-options">
+						<a class="goto-about" href="index.html#about"><h1 class="floatbar-text">About</h1></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<h1 class="page-name">Name</h1>
+
+		<div class="loader-container">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+		<section class="photo-container" id="Graduation-container">
+		</section>
+		<section class="single-photo-container" oncontextmenu="return false;">
+			<button type="button" class="close-button" aria-label="Close">
+				<span>&times;</span>
+			</button>
+			<button type="button" class="move-button left-button">
+				<span>&lsaquo;</span>
+			</button>
+			<div id="Graduation-container-large" class="large-picture-container">
+			</div>
+			<button type="button" class="move-button right-button">
+				<span>&rsaquo;</span>
+			</button>
+		</section>
+		<div class="copyright">
+			<a href="https://facebook.com/arnoldzhouphoto"><img src="assets/OtherPhotos/facebook.png" alt="Facebook"></a>
+			<a href="https://www.instagram.com/azoom1396/"><img src="assets/OtherPhotos/instagram.png" alt="Instagram"></a>
+			<h3>©  Arnold Zhou 2017</h3>
+		</div>
+	</body>
+</html>

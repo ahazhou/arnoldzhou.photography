@@ -77,11 +77,11 @@ function temp_insert_image(preloadLarge){
 	else if (currpage() === "Portraits"){
 		numberOfImages = 18;
 	}
-	else if (currpage() === "Proposal and Graduation"){
-		numberOfImages = 36;
+	else if (currpage() === "Graduation"){
+		numberOfImages = 20;
 	}
 	else if (currpage() === "Street"){
-		numberOfImages = 31;
+		numberOfImages = 20;
 	}
 	var adjustedPage = currpage().replace(/ /g, '');
 	var currElement = document.getElementById(adjustedPage + "-container");
