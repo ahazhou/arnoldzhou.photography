@@ -81,7 +81,7 @@ def mainfunc(currPaths, rename, doCompress):
 def main():
 	rename = "asdf"
 	#True to compress and false to not compress
-	doCompress = False
+	doCompress = True
 	#paths for actual paths, changePaths for toAddChange
 	path = changePaths
 	
